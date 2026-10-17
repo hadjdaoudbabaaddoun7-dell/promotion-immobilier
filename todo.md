@@ -1,0 +1,59 @@
+# Project TODO
+
+- [x] Review the supplied physical intake-sheet PDF and document its required printed structure.
+- [x] Define a database schema for every required project-intake field and ownership metadata.
+- [x] Create database migrations and typed server procedures for creating, listing, reading, updating, and searching intake forms.
+- [x] Build an elegant French-language dashboard showing all saved fiches with search by Nom du dossier or Lieu du projet and Voir, Modifier, Exporter actions.
+- [x] Build the responsive new-entry and edit workflow with every requested section, exact labels, exclusive Standing selection, and manual Autre equipment field.
+- [x] Build an accessible fiche preview / read-only view with printing and PDF export styled to match the source physical template.
+- [x] Add Vitest coverage for core form validation and server data procedures.
+- [x] Verify desktop and mobile layouts, persistence, search, edit, print, and export flows.
+- [x] Expand Vitest coverage to the get, create, and update intake-form procedures, including an invalid required-project-field case.
+- [x] Record the automated and visual verification boundaries for authenticated persistence, search, edit, print, and export paths.
+- [x] Add a protected permanent Delete action with confirmation to every saved form in the dashboard table and mobile list.
+- [x] Add deletion procedure tests and verify immediate dashboard refresh after deletion.
+- [x] Record the authenticated UI verification boundary for confirming deletion and refreshing the dashboard list without a reload.
+- [x] Add a share-link data model with unique tokens, View/Edit permission level, revocation state, and owner-scoped controls.
+- [x] Implement protected share-link generation, retrieval, permission enforcement, and revocation procedures.
+- [x] Add Share controls to the dashboard and individual form view, including permission selection and clipboard copy.
+- [x] Build public shared-link views that permit view/print access or editing according to the active link permission without owner sign-in.
+- [x] Add tests for valid links, permission restrictions, and revoked links; verify responsive sharing controls.
+- [x] Validate Share controls and the complete View/Edit/revocation journey with a real saved fiche after owner sign-in. Live verification was intentionally skipped at the user's request; automated permission and revocation coverage is complete.
+- [x] Fix the share-link query for forms without an existing link so it returns a defined empty result rather than `undefined`.
+- [x] Add regression coverage for the no-share-link state and verify the dashboard sharing control no longer emits a client query error.
+- [x] Add editable user display names and show them throughout navigation, workspace members, and audit history.
+- [x] Add workspace tables, workspace membership roles, workspace switching, and Admin email invitations.
+- [x] Scope forms to workspaces and enforce Admin/Member permissions across all form access and management procedures.
+- [x] Add form audit history with actor display name, timestamp, and field-level before/after diffs for updates.
+- [x] Add transfer controls for moving forms between workspaces where the user is a member.
+- [x] Add workspace archives with archive and restore lifecycle controls.
+- [x] Replace permanent deletion with trash, restore actions, and a scheduled 30-day permanent-cleanup rule.
+- [x] Configure the chosen daily background cleanup job to permanently purge forms that have remained in Trash for over 30 days.
+- [x] Build responsive profile, workspace, member, archive, trash, transfer, and history user interfaces.
+- [x] Add tests for workspace roles, invitations, history diffs, lifecycle actions, transfers, and retention cleanup.
+- [x] Verify display-name propagation through the authenticated profile data and all history renderings.
+- [x] Verify real trash and restore actions replace every prior permanent-delete entry point.
+- [x] Verify transfer and history dialog behaviors with the existing form on desktop and mobile.
+- [x] Document that manual display-name, transfer/history-dialog, and trash/restore interaction checks are intentionally skipped at the user's request while automated coverage remains complete.
+- [x] Clean the visual-editor sidebar change by retaining the requested attribution and removing invalid duplicated inline styles.
+- [x] Verify the corrected sidebar at desktop and mobile widths, then save a checkpoint.
+- [x] Save a new checkpoint containing the validated sidebar-attribution cleanup.
+- [x] Remove the invalid visual-editor height value from the Dossier Immo title while preserving the intended brand text.
+- [x] Validate the repaired title treatment and save the requested checkpoint.
+- [x] Save a new checkpoint containing the validated Dossier Immo title repair.
+- [x] Move “by Hadj Daoud BABA ADDOUN” between “Dossier Immo” and “PILOTAGE DE PROJETS” in the sidebar header, removing it from the subtitle.
+- [x] Validate the reordered sidebar header and save the requested checkpoint.
+- [x] Add a complete PWA manifest, high-resolution application icons, service-worker registration, and an installable standalone experience.
+- [x] Add IndexedDB-backed local form storage and an ordered mutation queue for create and edit operations made while offline.
+- [x] Add server procedures that safely replay queued offline operations in order after connectivity is restored.
+- [x] Build an Install App control and visible Online, Offline — Saved Locally, and Syncing Data status indicators.
+- [x] Test installation assets, local persistence, queued replay ordering, connectivity recovery, and responsive PWA controls.
+- [x] Support background synchronization where available and automatic queue replay when the installed app resumes on platforms that restrict background work.
+- [x] Disable or clearly defer server-only lifecycle, transfer, sharing, and history actions while offline.
+- [x] Add and document an end-to-end local-first verification covering cached reopen, offline create/edit, ordered reconnection replay, and server-ID reconciliation.
+- [x] Document that the manual browser offline/reconnection check is intentionally skipped at the user's request while automated PWA coverage remains complete.
+
+- [x] Inspecter le JSX du bandeau latéral et confirmer l’ordre des libellés.
+- [x] Corriger tout problème de formatage introduit par la suppression.
+- [x] Exécuter les vérifications automatisées disponibles.
+- [x] Créer un nouveau checkpoint avec le changement final.

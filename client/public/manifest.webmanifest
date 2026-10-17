@@ -1,0 +1,25 @@
+{
+  "name": "promotion immobilier — Fiches de projet",
+  "short_name": "promotion immobilier",
+  "description": "Gestion collaborative des fiches de projet immobilier.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f2",
+  "theme_color": "#223044",
+  "icons": [
+    {
+      "src": "/manus-storage/dossier-immo-pwa-192_d2bf483d.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/manus-storage/dossier-immo-pwa-512_e857f0b8.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
